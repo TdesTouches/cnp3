@@ -144,7 +144,7 @@ sent by Mallory.
 To cope with these security threats and improve the security of the
 DNS, the IETF has defined several extensions that are known as DNSSEC.
 DNSSEC exploits public-key cryptography to authenticate the content
-of the DNS records that are sent by DNS servers and resolvers. DNSEC is
+of the DNS records that are sent by DNS servers and resolvers. DNSSEC is
 defined in three main documents :rfc:`4033`, :rfc:`4034`, :rfc:`4035`. 
 With DNSSEC, each DNS zone uses one public-private key pair. This key pair
 is only used to sign and authenticate DNS records. The DNS records are
@@ -271,7 +271,7 @@ Current DNS deployments allow resolvers to cache those negative answers
 to reduce the load on the entire DNS :rfc:`2308`. 
 
 The simplest way to allow a DNSSEC server to return signed negative responses
-would be for the serve to return a signed response that contains the
+would be for the server to return a signed response that contains the
 received query and some information indicating the error. 
 The client could then easily check the validity of the negative response.
 Unfortunately, this would force the DNSSEC server to generate signatures
